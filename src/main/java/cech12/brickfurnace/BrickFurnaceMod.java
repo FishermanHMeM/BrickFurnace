@@ -20,6 +20,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.loading.FMLConfig;
 import net.minecraftforge.fml.loading.FMLPaths;
+import net.minecraftforge.fml.util.ObfuscationReflectionHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -75,7 +76,7 @@ public class BrickFurnaceMod {
         poiType.matchingStates = ImmutableSet.copyOf(poiTypeStates);
         try {
             //accesstransformer cannot change access of TYPE_BY_STATE - use java reflection
-            Field typeByStateField = PoiType.class.getDeclaredField("TYPE_BY_STATE");
+            Field typeByStateField = ObfuscationReflectionHelper.findField(PoiType.class, "f_27323_"); //TYPE_BY_STATE
             typeByStateField.setAccessible(true);
             Map<BlockState, PoiType> typeByState = (Map<BlockState, PoiType>) typeByStateField.get(poiType);
             for (BlockState blockState : blockStates) {
