@@ -3,6 +3,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Forge Recommended Versioning](https://mcforge.readthedocs.io/en/latest/conventions/versioning/).
 
+## [1.18.2-1.7.2.0] - 2023-01-06
+### Added
+- Added Portuguese translation (thanks to alofh) #17
+
+### Changed
+- backport changed recipes to use the forge tags for brick & iron ingots
+
 ## [1.18.2-1.7.1.0] - 2022-11-04
 ### Added
 - Support for External Heater of Immersive Engineering #16

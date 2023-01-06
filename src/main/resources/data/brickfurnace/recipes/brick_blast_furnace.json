@@ -7,13 +7,13 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:bricks"
+      "tag": "forge:ingots/brick"
     },
     "X": {
       "item": "brickfurnace:brick_furnace"
     },
     "I": {
-      "item": "minecraft:iron_ingot"
+      "tag": "forge:ingots/iron"
     }
   },
   "result": {

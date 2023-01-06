@@ -21,7 +21,7 @@ license="The MIT License (MIT)"
 [[dependencies.brickfurnace]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18.2,)"
+    versionRange="[1.18.2,1.19)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.brickfurnace]]
