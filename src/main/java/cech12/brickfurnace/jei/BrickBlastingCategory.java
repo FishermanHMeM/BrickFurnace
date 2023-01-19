@@ -6,7 +6,7 @@ import cech12.brickfurnace.config.ServerConfig;
 import cech12.brickfurnace.crafting.BrickBlastingRecipe;
 import mezz.jei.api.helpers.IGuiHelper;
 import mezz.jei.api.recipe.RecipeType;
-import mezz.jei.common.plugins.vanilla.cooking.AbstractCookingCategory;
+import mezz.jei.library.plugins.vanilla.cooking.AbstractCookingCategory;
 
 import javax.annotation.Nonnull;
 
